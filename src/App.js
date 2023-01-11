@@ -26,7 +26,7 @@ function App() {
     console.log(`I run when ${counter} chagnes`);
   }, [counter])
 
-  // This code runs every thime either the counter or keyword changes
+  // This code runs every time either the counter or keyword changes
   useEffect(() => {
     console.log('I run when counter or keyword changes');
   },[counter, keyword])

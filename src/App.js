@@ -18,7 +18,7 @@ function App() {
     // After summiting, make toDo empty
     setToDo("");
   };
-  console.log(toDos);
+
   return (
     <div>
       <h1>My To Dos ({toDos.length})</h1>
@@ -31,6 +31,12 @@ function App() {
         />
         <button>Add To Do </button>
       </form>
+      <hr />
+      <ul>
+        {toDos.map((curr_todo, index) => (
+          <li key={index} >{curr_todo}</li>
+        ))}
+      </ul>
     </div>
   )
 }

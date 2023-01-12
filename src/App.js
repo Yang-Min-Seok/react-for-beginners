@@ -36,7 +36,7 @@ function App() {
       <select
       onChange={getPriceAndName}
       >
-        {coins.map((coin, idx) => (
+        {coins.map((coin) => (
         <option>
           {coin.name} ({coin.symbol}) : {coin.quotes.USD.price} USD 
         </option>

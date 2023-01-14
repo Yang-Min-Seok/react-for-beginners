@@ -33,7 +33,7 @@ function Detail() {
                     <h3> Genres : {currMovie.data.movie.genres[0]}</h3>
                     <h3> Year : {currMovie.data.movie.year}</h3>
                     <h3> Languages : {currMovie.data.movie.language}</h3>
-                    <h3><Link to='/' style={{textDecoration:"none", color:"black"}}>Go back</Link></h3>
+                    <h3><Link to='/' style={{textDecoration:"none", color:"aqua"}}>Go back</Link></h3>
                 </div>
             }
         </div>

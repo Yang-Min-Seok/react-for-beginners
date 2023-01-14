@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 // useParams() -> returns id(the last one in path)
-import { Link } from 'react-router-dom';
 
 function Detail() {
     const { id } = useParams();
@@ -28,7 +27,7 @@ function Detail() {
             {loading ? <h1>Loading,,,</h1> : // if it is still on loading,, 
                 // if loading finished,,,
                 <div>
-                    <img src={currMovie.data.movie.medium_cover_image}></img>
+                    <img src={currMovie.data.movie.medium_cover_image} alt={currMovie.data.movie.title}></img>
                     <h3> Title : {currMovie.data.movie.title}</h3>
                     <h3> Genres : {currMovie.data.movie.genres[0]}</h3>
                     <h3> Year : {currMovie.data.movie.year}</h3>
